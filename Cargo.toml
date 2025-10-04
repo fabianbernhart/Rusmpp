@@ -7,6 +7,7 @@ members = [
     "rusmppy/rusmppyo3-reflection",
     "rusmppy/rusmppyc",
     "rusmppz",
+    "rusmppjs/codegen",
 ]
 default-members = ["rusmpp"]
 

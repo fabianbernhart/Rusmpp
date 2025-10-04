@@ -1,0 +1,20 @@
+[package]
+name = "codegen"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+rusmpp = { path = "../../rusmpp", default-features = false, features = [
+    "serde-deserialize-unchecked",
+    "verbose",
+] }
+serde-reflection = "0.5.0"
+serde-generate = "0.32.0"
+textwrap = "0.16.2"
+serde_json = "1.0.145"
+napi = "3.3.0"
+napi-derive = "3.2.5"
+
+[[bin]]
+name = "codegen"

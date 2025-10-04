@@ -1,0 +1,3692 @@
+{
+  "AddrSubunit": {
+    "ENUM": {
+      "0": {
+        "Unknown": "UNIT"
+      },
+      "1": {
+        "MSDisplay": "UNIT"
+      },
+      "2": {
+        "MobileEquipment": "UNIT"
+      },
+      "3": {
+        "SmartCard": "UNIT"
+      },
+      "4": {
+        "ExternalUnit": "UNIT"
+      },
+      "5": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "AlertNotification": {
+    "STRUCT": [
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "esme_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "esme_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "esme_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "ms_availability_status": {
+          "OPTION": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "AlertOnMessageDelivery": {
+    "ENUM": {
+      "0": {
+        "UseMobileDefaultAlert": "UNIT"
+      },
+      "1": {
+        "UseLowPriorityAlert": "UNIT"
+      },
+      "2": {
+        "UseMediumPriorityAlert": "UNIT"
+      },
+      "3": {
+        "UseHighPriorityAlert": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "Ansi41Specific": {
+    "ENUM": {
+      "0": {
+        "ShortMessageContainsDeliveryAcknowledgement": "UNIT"
+      },
+      "1": {
+        "ShortMessageContainsUserAcknowledgment": "UNIT"
+      },
+      "2": {
+        "ShortMessageContainsConversationAbort": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "BearerType": {
+    "ENUM": {
+      "0": {
+        "Unknown": "UNIT"
+      },
+      "1": {
+        "Sms": "UNIT"
+      },
+      "2": {
+        "Csd": "UNIT"
+      },
+      "3": {
+        "PacketData": "UNIT"
+      },
+      "4": {
+        "Ussd": "UNIT"
+      },
+      "5": {
+        "Cdpd": "UNIT"
+      },
+      "6": {
+        "DataTac": "UNIT"
+      },
+      "7": {
+        "FlexReFlex": "UNIT"
+      },
+      "8": {
+        "CellBroadcast": "UNIT"
+      },
+      "9": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "BindReceiver": {
+    "STRUCT": [
+      {
+        "system_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "password": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "system_type": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "interface_version": {
+          "TYPENAME": "InterfaceVersion"
+        }
+      },
+      {
+        "addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "address_range": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "BindReceiverResp": {
+    "STRUCT": [
+      {
+        "system_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "sc_interface_version": {
+          "OPTION": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "BindTransceiver": {
+    "STRUCT": [
+      {
+        "system_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "password": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "system_type": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "interface_version": {
+          "TYPENAME": "InterfaceVersion"
+        }
+      },
+      {
+        "addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "address_range": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "BindTransceiverResp": {
+    "STRUCT": [
+      {
+        "system_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "sc_interface_version": {
+          "OPTION": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "BindTransmitter": {
+    "STRUCT": [
+      {
+        "system_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "password": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "system_type": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "interface_version": {
+          "TYPENAME": "InterfaceVersion"
+        }
+      },
+      {
+        "addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "address_range": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "BindTransmitterResp": {
+    "STRUCT": [
+      {
+        "system_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "sc_interface_version": {
+          "OPTION": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "BroadcastAreaFormat": {
+    "ENUM": {
+      "0": {
+        "AliasName": "UNIT"
+      },
+      "1": {
+        "EllipsoidArc": "UNIT"
+      },
+      "2": {
+        "Polygon": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "BroadcastAreaIdentifier": {
+    "STRUCT": [
+      {
+        "format": {
+          "TYPENAME": "BroadcastAreaFormat"
+        }
+      },
+      {
+        "area": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "BroadcastAreaSuccess": {
+    "ENUM": {
+      "0": {
+        "InformationNotAvailable": "UNIT"
+      },
+      "1": {
+        "ZeroToHundred": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "BroadcastChannelIndicator": {
+    "ENUM": {
+      "0": {
+        "Basic": "UNIT"
+      },
+      "1": {
+        "Extended": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "BroadcastContentType": {
+    "STRUCT": [
+      {
+        "type_of_network": {
+          "TYPENAME": "TypeOfNetwork"
+        }
+      },
+      {
+        "encoding_content_type": {
+          "TYPENAME": "EncodingContentType"
+        }
+      }
+    ]
+  },
+  "BroadcastFrequencyInterval": {
+    "STRUCT": [
+      {
+        "unit": {
+          "TYPENAME": "UnitOfTime"
+        }
+      },
+      {
+        "value": "U16"
+      }
+    ]
+  },
+  "BroadcastMessageClass": {
+    "ENUM": {
+      "0": {
+        "NoClassSpecified": "UNIT"
+      },
+      "1": {
+        "Class1": "UNIT"
+      },
+      "2": {
+        "Class2": "UNIT"
+      },
+      "3": {
+        "Class3": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "BroadcastRepNum": {
+    "STRUCT": [
+      {
+        "value": "U8"
+      }
+    ]
+  },
+  "BroadcastSm": {
+    "STRUCT": [
+      {
+        "service_type": {
+          "TYPENAME": "ServiceType"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "priority_flag": {
+          "TYPENAME": "PriorityFlag"
+        }
+      },
+      {
+        "schedule_delivery_time": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "validity_period": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "replace_if_present_flag": {
+          "TYPENAME": "ReplaceIfPresentFlag"
+        }
+      },
+      {
+        "data_coding": {
+          "TYPENAME": "DataCoding"
+        }
+      },
+      {
+        "sm_default_msg_id": "U8"
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "BroadcastSmResp": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "CallbackNumPresInd": {
+    "STRUCT": [
+      {
+        "presentation": {
+          "TYPENAME": "Presentation"
+        }
+      },
+      {
+        "screening": {
+          "TYPENAME": "Screening"
+        }
+      }
+    ]
+  },
+  "CancelBroadcastSm": {
+    "STRUCT": [
+      {
+        "service_type": {
+          "TYPENAME": "ServiceType"
+        }
+      },
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "CancelSm": {
+    "STRUCT": [
+      {
+        "service_type": {
+          "TYPENAME": "ServiceType"
+        }
+      },
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "dest_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "dest_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "destination_addr": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "Command": {
+    "STRUCT": [
+      {
+        "id": {
+          "TYPENAME": "CommandId"
+        }
+      },
+      {
+        "status": {
+          "TYPENAME": "CommandStatus"
+        }
+      },
+      {
+        "sequence_number": "U32"
+      },
+      {
+        "pdu": {
+          "OPTION": {
+            "TYPENAME": "Pdu"
+          }
+        }
+      }
+    ]
+  },
+  "CommandId": {
+    "ENUM": {
+      "0": {
+        "BindReceiver": "UNIT"
+      },
+      "1": {
+        "BindTransmitter": "UNIT"
+      },
+      "2": {
+        "QuerySm": "UNIT"
+      },
+      "3": {
+        "SubmitSm": "UNIT"
+      },
+      "4": {
+        "DeliverSm": "UNIT"
+      },
+      "5": {
+        "Unbind": "UNIT"
+      },
+      "6": {
+        "ReplaceSm": "UNIT"
+      },
+      "7": {
+        "CancelSm": "UNIT"
+      },
+      "8": {
+        "BindTransceiver": "UNIT"
+      },
+      "9": {
+        "Outbind": "UNIT"
+      },
+      "10": {
+        "EnquireLink": "UNIT"
+      },
+      "11": {
+        "SubmitMulti": "UNIT"
+      },
+      "12": {
+        "AlertNotification": "UNIT"
+      },
+      "13": {
+        "DataSm": "UNIT"
+      },
+      "14": {
+        "BroadcastSm": "UNIT"
+      },
+      "15": {
+        "QueryBroadcastSm": "UNIT"
+      },
+      "16": {
+        "CancelBroadcastSm": "UNIT"
+      },
+      "17": {
+        "GenericNack": "UNIT"
+      },
+      "18": {
+        "BindReceiverResp": "UNIT"
+      },
+      "19": {
+        "BindTransmitterResp": "UNIT"
+      },
+      "20": {
+        "QuerySmResp": "UNIT"
+      },
+      "21": {
+        "SubmitSmResp": "UNIT"
+      },
+      "22": {
+        "DeliverSmResp": "UNIT"
+      },
+      "23": {
+        "UnbindResp": "UNIT"
+      },
+      "24": {
+        "ReplaceSmResp": "UNIT"
+      },
+      "25": {
+        "CancelSmResp": "UNIT"
+      },
+      "26": {
+        "BindTransceiverResp": "UNIT"
+      },
+      "27": {
+        "EnquireLinkResp": "UNIT"
+      },
+      "28": {
+        "SubmitMultiResp": "UNIT"
+      },
+      "29": {
+        "DataSmResp": "UNIT"
+      },
+      "30": {
+        "BroadcastSmResp": "UNIT"
+      },
+      "31": {
+        "QueryBroadcastSmResp": "UNIT"
+      },
+      "32": {
+        "CancelBroadcastSmResp": "UNIT"
+      },
+      "33": {
+        "Other": {
+          "NEWTYPE": "U32"
+        }
+      }
+    }
+  },
+  "CommandStatus": {
+    "ENUM": {
+      "0": {
+        "EsmeRok": "UNIT"
+      },
+      "1": {
+        "EsmeRinvmsglen": "UNIT"
+      },
+      "2": {
+        "EsmeRinvcmdlen": "UNIT"
+      },
+      "3": {
+        "EsmeRinvcmdid": "UNIT"
+      },
+      "4": {
+        "EsmeRinvbndsts": "UNIT"
+      },
+      "5": {
+        "EsmeRalybnd": "UNIT"
+      },
+      "6": {
+        "EsmeRinvprtflg": "UNIT"
+      },
+      "7": {
+        "EsmeRinvregdlvflg": "UNIT"
+      },
+      "8": {
+        "EsmeRsyserr": "UNIT"
+      },
+      "9": {
+        "EsmeRinvsrcadr": "UNIT"
+      },
+      "10": {
+        "EsmeRinvdstadr": "UNIT"
+      },
+      "11": {
+        "EsmeRinvmsgid": "UNIT"
+      },
+      "12": {
+        "EsmeRbindfail": "UNIT"
+      },
+      "13": {
+        "EsmeRinvpaswd": "UNIT"
+      },
+      "14": {
+        "EsmeRinvsysid": "UNIT"
+      },
+      "15": {
+        "EsmeRcancelfail": "UNIT"
+      },
+      "16": {
+        "EsmeRreplacefail": "UNIT"
+      },
+      "17": {
+        "EsmeRmsgqful": "UNIT"
+      },
+      "18": {
+        "EsmeRinvsertyp": "UNIT"
+      },
+      "19": {
+        "EsmeRinvnumdests": "UNIT"
+      },
+      "20": {
+        "EsmeRinvdlname": "UNIT"
+      },
+      "21": {
+        "EsmeRinvdestflag": "UNIT"
+      },
+      "22": {
+        "EsmeRinvsubrep": "UNIT"
+      },
+      "23": {
+        "EsmeRinvesmclass": "UNIT"
+      },
+      "24": {
+        "EsmeRcntsubdl": "UNIT"
+      },
+      "25": {
+        "EsmeRsubmitfail": "UNIT"
+      },
+      "26": {
+        "EsmeRinvsrcton": "UNIT"
+      },
+      "27": {
+        "EsmeRinvsrcnpi": "UNIT"
+      },
+      "28": {
+        "EsmeRinvdstton": "UNIT"
+      },
+      "29": {
+        "EsmeRinvdstnpi": "UNIT"
+      },
+      "30": {
+        "EsmeRinvsystyp": "UNIT"
+      },
+      "31": {
+        "EsmeRinvrepflag": "UNIT"
+      },
+      "32": {
+        "EsmeRinvnummsgs": "UNIT"
+      },
+      "33": {
+        "EsmeRthrottled": "UNIT"
+      },
+      "34": {
+        "EsmeRinvsched": "UNIT"
+      },
+      "35": {
+        "EsmeRinvexpiry": "UNIT"
+      },
+      "36": {
+        "EsmeRinvdftmsgid": "UNIT"
+      },
+      "37": {
+        "EsmeRxTAppn": "UNIT"
+      },
+      "38": {
+        "EsmeRxPAppn": "UNIT"
+      },
+      "39": {
+        "EsmeRxRAppn": "UNIT"
+      },
+      "40": {
+        "EsmeRqueryfail": "UNIT"
+      },
+      "41": {
+        "EsmeRinvtlvstream": "UNIT"
+      },
+      "42": {
+        "EsmeRtlvnotallwd": "UNIT"
+      },
+      "43": {
+        "EsmeRinvtlvlen": "UNIT"
+      },
+      "44": {
+        "EsmeRmissingtlv": "UNIT"
+      },
+      "45": {
+        "EsmeRinvtlvval": "UNIT"
+      },
+      "46": {
+        "EsmeRdeliveryfailure": "UNIT"
+      },
+      "47": {
+        "EsmeRunknownerr": "UNIT"
+      },
+      "48": {
+        "EsmeRsertypunauth": "UNIT"
+      },
+      "49": {
+        "EsmeRprohibited": "UNIT"
+      },
+      "50": {
+        "EsmeRsertypunavail": "UNIT"
+      },
+      "51": {
+        "EsmeRsertypdenied": "UNIT"
+      },
+      "52": {
+        "EsmeRinvdcs": "UNIT"
+      },
+      "53": {
+        "EsmeRinvsrcaddrsubunit": "UNIT"
+      },
+      "54": {
+        "EsmeRinvdstaddrsubunit": "UNIT"
+      },
+      "55": {
+        "EsmeRinvbcastfreqint": "UNIT"
+      },
+      "56": {
+        "EsmeRinvbcastaliasName": "UNIT"
+      },
+      "57": {
+        "EsmeRinvbcastareafmt": "UNIT"
+      },
+      "58": {
+        "EsmeRinvnumbcastAreas": "UNIT"
+      },
+      "59": {
+        "EsmeRinvbcastcnttype": "UNIT"
+      },
+      "60": {
+        "EsmeRinvbcastmsgclass": "UNIT"
+      },
+      "61": {
+        "EsmeRbcastfail": "UNIT"
+      },
+      "62": {
+        "EsmeRbcastqueryfail": "UNIT"
+      },
+      "63": {
+        "EsmeRbcastcancelfail": "UNIT"
+      },
+      "64": {
+        "EsmeRinvbcastRep": "UNIT"
+      },
+      "65": {
+        "EsmeRinvbcastsrvgrp": "UNIT"
+      },
+      "66": {
+        "EsmeRinvbcastchanind": "UNIT"
+      },
+      "67": {
+        "Other": {
+          "NEWTYPE": "U32"
+        }
+      }
+    }
+  },
+  "CongestionState": {
+    "ENUM": {
+      "0": {
+        "Idle": "UNIT"
+      },
+      "1": {
+        "LowLoad": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "2": {
+        "MediumLoad": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "3": {
+        "HighLoad": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "4": {
+        "OptimumLoad": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "5": {
+        "NearingCongestion": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "6": {
+        "Congested": "UNIT"
+      },
+      "7": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "DataCoding": {
+    "ENUM": {
+      "0": {
+        "McSpecific": "UNIT"
+      },
+      "1": {
+        "Ia5": "UNIT"
+      },
+      "2": {
+        "OctetUnspecified": "UNIT"
+      },
+      "3": {
+        "Latin1": "UNIT"
+      },
+      "4": {
+        "OctetUnspecified2": "UNIT"
+      },
+      "5": {
+        "Jis": "UNIT"
+      },
+      "6": {
+        "Cyrillic": "UNIT"
+      },
+      "7": {
+        "LatinHebrew": "UNIT"
+      },
+      "8": {
+        "Ucs2": "UNIT"
+      },
+      "9": {
+        "PictogramEncoding": "UNIT"
+      },
+      "10": {
+        "Iso2022JpMusicCodes": "UNIT"
+      },
+      "11": {
+        "ExtendedKanjiJis": "UNIT"
+      },
+      "12": {
+        "Ksc5601": "UNIT"
+      },
+      "13": {
+        "GsmMwiControl": "UNIT"
+      },
+      "14": {
+        "GsmMwiControl2": "UNIT"
+      },
+      "15": {
+        "GsmMessageClassControl": "UNIT"
+      },
+      "16": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "DataSm": {
+    "STRUCT": [
+      {
+        "service_type": {
+          "TYPENAME": "ServiceType"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "dest_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "dest_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "destination_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "esm_class": {
+          "TYPENAME": "EsmClass"
+        }
+      },
+      {
+        "registered_delivery": {
+          "TYPENAME": "RegisteredDelivery"
+        }
+      },
+      {
+        "data_coding": {
+          "TYPENAME": "DataCoding"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "DataSmResp": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "DeliverSm": {
+    "STRUCT": [
+      {
+        "service_type": {
+          "TYPENAME": "ServiceType"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "dest_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "dest_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "destination_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "esm_class": {
+          "TYPENAME": "EsmClass"
+        }
+      },
+      {
+        "protocol_id": "U8"
+      },
+      {
+        "priority_flag": {
+          "TYPENAME": "PriorityFlag"
+        }
+      },
+      {
+        "schedule_delivery_time": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "validity_period": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "registered_delivery": {
+          "TYPENAME": "RegisteredDelivery"
+        }
+      },
+      {
+        "replace_if_present_flag": {
+          "TYPENAME": "ReplaceIfPresentFlag"
+        }
+      },
+      {
+        "data_coding": {
+          "TYPENAME": "DataCoding"
+        }
+      },
+      {
+        "sm_default_msg_id": "U8"
+      },
+      {
+        "sm_length": "U8"
+      },
+      {
+        "short_message": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "DeliverSmResp": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "DeliveryFailureReason": {
+    "ENUM": {
+      "0": {
+        "DestinationUnavailable": "UNIT"
+      },
+      "1": {
+        "DestinationAddressInvalid": "UNIT"
+      },
+      "2": {
+        "PermanentNetworkError": "UNIT"
+      },
+      "3": {
+        "TemporaryNetworkError": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "DestAddrNpResolution": {
+    "ENUM": {
+      "0": {
+        "QueryNotPerformed": "UNIT"
+      },
+      "1": {
+        "QueryPerformedNumberNotPorted": "UNIT"
+      },
+      "2": {
+        "QueryPerformedNumberPorted": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "DestAddress": {
+    "ENUM": {
+      "0": {
+        "SmeAddress": {
+          "NEWTYPE": {
+            "TYPENAME": "SmeAddress"
+          }
+        }
+      },
+      "1": {
+        "DistributionListName": {
+          "NEWTYPE": {
+            "TYPENAME": "DistributionListName"
+          }
+        }
+      }
+    }
+  },
+  "DestFlag": {
+    "ENUM": {
+      "0": {
+        "SmeAddress": "UNIT"
+      },
+      "1": {
+        "DistributionListName": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "DisplayTime": {
+    "ENUM": {
+      "0": {
+        "Temporary": "UNIT"
+      },
+      "1": {
+        "Default": "UNIT"
+      },
+      "2": {
+        "Invoke": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "DistributionListName": {
+    "STRUCT": [
+      {
+        "dest_flag": {
+          "TYPENAME": "DestFlag"
+        }
+      },
+      {
+        "dl_name": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "DpfResult": {
+    "ENUM": {
+      "0": {
+        "NotSet": "UNIT"
+      },
+      "1": {
+        "Set": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "EncodingContentType": {
+    "ENUM": {
+      "0": {
+        "Index": "UNIT"
+      },
+      "1": {
+        "EmergencyBroadcasts": "UNIT"
+      },
+      "2": {
+        "IrdbDownload": "UNIT"
+      },
+      "3": {
+        "NewsFlashes": "UNIT"
+      },
+      "4": {
+        "GeneralNewsLocal": "UNIT"
+      },
+      "5": {
+        "GeneralNewsRegional": "UNIT"
+      },
+      "6": {
+        "GeneralNewsNational": "UNIT"
+      },
+      "7": {
+        "GeneralNewsInternational": "UNIT"
+      },
+      "8": {
+        "BusinessFinancialNewsLocal": "UNIT"
+      },
+      "9": {
+        "BusinessFinancialNewsRegional": "UNIT"
+      },
+      "10": {
+        "BusinessFinancialNewsNational": "UNIT"
+      },
+      "11": {
+        "BusinessFinancialNewsInternational": "UNIT"
+      },
+      "12": {
+        "SportsNewsLocal": "UNIT"
+      },
+      "13": {
+        "SportsNewsRegional": "UNIT"
+      },
+      "14": {
+        "SportsNewsNational": "UNIT"
+      },
+      "15": {
+        "SportsNewsInternational": "UNIT"
+      },
+      "16": {
+        "EntertainmentNewsLocal": "UNIT"
+      },
+      "17": {
+        "EntertainmentNewsRegional": "UNIT"
+      },
+      "18": {
+        "EntertainmentNewsNational": "UNIT"
+      },
+      "19": {
+        "EntertainmentNewsInternational": "UNIT"
+      },
+      "20": {
+        "MedicalHealthHospitals": "UNIT"
+      },
+      "21": {
+        "Doctors": "UNIT"
+      },
+      "22": {
+        "Pharmacy": "UNIT"
+      },
+      "23": {
+        "LocalTrafficRoadReports": "UNIT"
+      },
+      "24": {
+        "LongDistanceTrafficRoadReports": "UNIT"
+      },
+      "25": {
+        "Taxis": "UNIT"
+      },
+      "26": {
+        "Weather": "UNIT"
+      },
+      "27": {
+        "LocalAirportFlightSchedules": "UNIT"
+      },
+      "28": {
+        "Restaurants": "UNIT"
+      },
+      "29": {
+        "Lodgings": "UNIT"
+      },
+      "30": {
+        "RetailDirectory": "UNIT"
+      },
+      "31": {
+        "Advertisements": "UNIT"
+      },
+      "32": {
+        "StockQuotes": "UNIT"
+      },
+      "33": {
+        "EmploymentOpportunities": "UNIT"
+      },
+      "34": {
+        "TechnologyNews": "UNIT"
+      },
+      "35": {
+        "DistrictBaseStationInfo": "UNIT"
+      },
+      "36": {
+        "NetworkInformation": "UNIT"
+      },
+      "37": {
+        "OperatorServices": "UNIT"
+      },
+      "38": {
+        "DirectoryEnquiriesNational": "UNIT"
+      },
+      "39": {
+        "DirectoryEnquiriesInternational": "UNIT"
+      },
+      "40": {
+        "CustomerCareNational": "UNIT"
+      },
+      "41": {
+        "CustomerCareInternational": "UNIT"
+      },
+      "42": {
+        "LocalDateTimeTimeZone": "UNIT"
+      },
+      "43": {
+        "MultiCategoryServices": "UNIT"
+      },
+      "44": {
+        "Other": {
+          "NEWTYPE": "U16"
+        }
+      }
+    }
+  },
+  "ErrorCodeNetworkType": {
+    "ENUM": {
+      "0": {
+        "Ansi136AccessDeniedReason": "UNIT"
+      },
+      "1": {
+        "Is95AccessDeniedReason": "UNIT"
+      },
+      "2": {
+        "Gsm": "UNIT"
+      },
+      "3": {
+        "Ansi136CauseCode": "UNIT"
+      },
+      "4": {
+        "Is95CauseCode": "UNIT"
+      },
+      "5": {
+        "Ansi41Error": "UNIT"
+      },
+      "6": {
+        "SmppError": "UNIT"
+      },
+      "7": {
+        "MessageCenterSpecific": "UNIT"
+      },
+      "8": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "EsmClass": {
+    "STRUCT": [
+      {
+        "messaging_mode": {
+          "TYPENAME": "MessagingMode"
+        }
+      },
+      {
+        "message_type": {
+          "TYPENAME": "MessageType"
+        }
+      },
+      {
+        "ansi41_specific": {
+          "TYPENAME": "Ansi41Specific"
+        }
+      },
+      {
+        "gsm_features": {
+          "TYPENAME": "GsmFeatures"
+        }
+      }
+    ]
+  },
+  "GsmFeatures": {
+    "ENUM": {
+      "0": {
+        "NotSelected": "UNIT"
+      },
+      "1": {
+        "UdhiIndicator": "UNIT"
+      },
+      "2": {
+        "SetReplyPath": "UNIT"
+      },
+      "3": {
+        "SetUdhiAndReplyPath": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "Indicator": {
+    "ENUM": {
+      "0": {
+        "Inactive": "UNIT"
+      },
+      "1": {
+        "Active": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "InterfaceVersion": {
+    "ENUM": {
+      "0": {
+        "Smpp3_3OrEarlier": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "1": {
+        "Smpp3_4": "UNIT"
+      },
+      "2": {
+        "Smpp5_0": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "IntermediateNotification": {
+    "ENUM": {
+      "0": {
+        "NoIntermediaryNotificationRequested": "UNIT"
+      },
+      "1": {
+        "IntermediateNotificationRequested": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "ItsReplyType": {
+    "ENUM": {
+      "0": {
+        "Digit": "UNIT"
+      },
+      "1": {
+        "Number": "UNIT"
+      },
+      "2": {
+        "TelephoneNo": "UNIT"
+      },
+      "3": {
+        "Password": "UNIT"
+      },
+      "4": {
+        "CharacterLine": "UNIT"
+      },
+      "5": {
+        "Menu": "UNIT"
+      },
+      "6": {
+        "Date": "UNIT"
+      },
+      "7": {
+        "Time": "UNIT"
+      },
+      "8": {
+        "Continue": "UNIT"
+      },
+      "9": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "ItsSessionInfo": {
+    "STRUCT": [
+      {
+        "session_number": "U8"
+      },
+      {
+        "sequence_number": "U8"
+      }
+    ]
+  },
+  "LanguageIndicator": {
+    "ENUM": {
+      "0": {
+        "Unspecified": "UNIT"
+      },
+      "1": {
+        "English": "UNIT"
+      },
+      "2": {
+        "French": "UNIT"
+      },
+      "3": {
+        "Spanish": "UNIT"
+      },
+      "4": {
+        "German": "UNIT"
+      },
+      "5": {
+        "Portuguese": "UNIT"
+      },
+      "6": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MCDeliveryReceipt": {
+    "ENUM": {
+      "0": {
+        "NoMcDeliveryReceiptRequested": "UNIT"
+      },
+      "1": {
+        "McDeliveryReceiptRequestedWhereFinalDeliveryOutcomeIsSuccessOrFailure": "UNIT"
+      },
+      "2": {
+        "McDeliveryReceiptRequestedWhereFinalDeliveryOutcomeIsFailure": "UNIT"
+      },
+      "3": {
+        "McDeliveryReceiptRequestedWhereFinalDeliveryOutcomeIsSuccess": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MessagePayload": {
+    "STRUCT": [
+      {
+        "value": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "MessageState": {
+    "ENUM": {
+      "0": {
+        "Scheduled": "UNIT"
+      },
+      "1": {
+        "Enroute": "UNIT"
+      },
+      "2": {
+        "Delivered": "UNIT"
+      },
+      "3": {
+        "Expired": "UNIT"
+      },
+      "4": {
+        "Deleted": "UNIT"
+      },
+      "5": {
+        "Undeliverable": "UNIT"
+      },
+      "6": {
+        "Accepted": "UNIT"
+      },
+      "7": {
+        "Unknown": "UNIT"
+      },
+      "8": {
+        "Rejected": "UNIT"
+      },
+      "9": {
+        "Skipped": "UNIT"
+      },
+      "10": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MessageType": {
+    "ENUM": {
+      "0": {
+        "Default": "UNIT"
+      },
+      "1": {
+        "ShortMessageContainsMCDeliveryReceipt": "UNIT"
+      },
+      "2": {
+        "ShortMessageContainsIntermediateDeliveryNotification": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MessagingMode": {
+    "ENUM": {
+      "0": {
+        "Default": "UNIT"
+      },
+      "1": {
+        "Datagram": "UNIT"
+      },
+      "2": {
+        "Forward": "UNIT"
+      },
+      "3": {
+        "StoreAndForward": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MoreMessagesToSend": {
+    "ENUM": {
+      "0": {
+        "NoMoreMessagesToFollow": "UNIT"
+      },
+      "1": {
+        "MoreMessagesToFollow": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MsAvailabilityStatus": {
+    "ENUM": {
+      "0": {
+        "Available": "UNIT"
+      },
+      "1": {
+        "Denied": "UNIT"
+      },
+      "2": {
+        "Unavailable": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MsMsgWaitFacilities": {
+    "STRUCT": [
+      {
+        "indicator": {
+          "TYPENAME": "Indicator"
+        }
+      },
+      {
+        "type_of_message": {
+          "TYPENAME": "TypeOfMessage"
+        }
+      }
+    ]
+  },
+  "MsValidity": {
+    "STRUCT": [
+      {
+        "validity_behavior": {
+          "TYPENAME": "MsValidityBehavior"
+        }
+      },
+      {
+        "validity_information": {
+          "OPTION": {
+            "TYPENAME": "MsValidityInformation"
+          }
+        }
+      }
+    ]
+  },
+  "MsValidityBehavior": {
+    "ENUM": {
+      "0": {
+        "StoreIndefinitely": "UNIT"
+      },
+      "1": {
+        "PowerDown": "UNIT"
+      },
+      "2": {
+        "ValidUntilRegistrationAreaChanges": "UNIT"
+      },
+      "3": {
+        "DisplayOnly": "UNIT"
+      },
+      "4": {
+        "RelativeTimePeriod": "UNIT"
+      },
+      "5": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "MsValidityInformation": {
+    "STRUCT": [
+      {
+        "units_of_time": {
+          "TYPENAME": "UnitsOfTime"
+        }
+      },
+      {
+        "number_of_time_units": "U16"
+      }
+    ]
+  },
+  "NetworkErrorCode": {
+    "STRUCT": [
+      {
+        "network_type": {
+          "TYPENAME": "ErrorCodeNetworkType"
+        }
+      },
+      {
+        "error_code": "U16"
+      }
+    ]
+  },
+  "NetworkType": {
+    "ENUM": {
+      "0": {
+        "Unknown": "UNIT"
+      },
+      "1": {
+        "Gsm": "UNIT"
+      },
+      "2": {
+        "Ansi136": "UNIT"
+      },
+      "3": {
+        "Is95": "UNIT"
+      },
+      "4": {
+        "Pdc": "UNIT"
+      },
+      "5": {
+        "Phs": "UNIT"
+      },
+      "6": {
+        "IDen": "UNIT"
+      },
+      "7": {
+        "Amps": "UNIT"
+      },
+      "8": {
+        "PagingNetwork": "UNIT"
+      },
+      "9": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "Npi": {
+    "ENUM": {
+      "0": {
+        "Unknown": "UNIT"
+      },
+      "1": {
+        "Isdn": "UNIT"
+      },
+      "2": {
+        "Data": "UNIT"
+      },
+      "3": {
+        "Telex": "UNIT"
+      },
+      "4": {
+        "LandMobile": "UNIT"
+      },
+      "5": {
+        "National": "UNIT"
+      },
+      "6": {
+        "Private": "UNIT"
+      },
+      "7": {
+        "Ermes": "UNIT"
+      },
+      "8": {
+        "Internet": "UNIT"
+      },
+      "9": {
+        "WapClientId": "UNIT"
+      },
+      "10": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "NumberOfMessages": {
+    "ENUM": {
+      "0": {
+        "Allowed": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "1": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "Outbind": {
+    "STRUCT": [
+      {
+        "system_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "password": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "PayloadType": {
+    "ENUM": {
+      "0": {
+        "Default": "UNIT"
+      },
+      "1": {
+        "WcmpMessage": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "Pdu": {
+    "ENUM": {
+      "0": {
+        "BindTransmitter": {
+          "NEWTYPE": {
+            "TYPENAME": "BindTransmitter"
+          }
+        }
+      },
+      "1": {
+        "BindTransmitterResp": {
+          "NEWTYPE": {
+            "TYPENAME": "BindTransmitterResp"
+          }
+        }
+      },
+      "2": {
+        "BindReceiver": {
+          "NEWTYPE": {
+            "TYPENAME": "BindReceiver"
+          }
+        }
+      },
+      "3": {
+        "BindReceiverResp": {
+          "NEWTYPE": {
+            "TYPENAME": "BindReceiverResp"
+          }
+        }
+      },
+      "4": {
+        "BindTransceiver": {
+          "NEWTYPE": {
+            "TYPENAME": "BindTransceiver"
+          }
+        }
+      },
+      "5": {
+        "BindTransceiverResp": {
+          "NEWTYPE": {
+            "TYPENAME": "BindTransceiverResp"
+          }
+        }
+      },
+      "6": {
+        "Outbind": {
+          "NEWTYPE": {
+            "TYPENAME": "Outbind"
+          }
+        }
+      },
+      "7": {
+        "AlertNotification": {
+          "NEWTYPE": {
+            "TYPENAME": "AlertNotification"
+          }
+        }
+      },
+      "8": {
+        "SubmitSm": {
+          "NEWTYPE": {
+            "TYPENAME": "SubmitSm"
+          }
+        }
+      },
+      "9": {
+        "SubmitSmResp": {
+          "NEWTYPE": {
+            "TYPENAME": "SubmitSmResp"
+          }
+        }
+      },
+      "10": {
+        "QuerySm": {
+          "NEWTYPE": {
+            "TYPENAME": "QuerySm"
+          }
+        }
+      },
+      "11": {
+        "QuerySmResp": {
+          "NEWTYPE": {
+            "TYPENAME": "QuerySmResp"
+          }
+        }
+      },
+      "12": {
+        "DeliverSm": {
+          "NEWTYPE": {
+            "TYPENAME": "DeliverSm"
+          }
+        }
+      },
+      "13": {
+        "DeliverSmResp": {
+          "NEWTYPE": {
+            "TYPENAME": "DeliverSmResp"
+          }
+        }
+      },
+      "14": {
+        "DataSm": {
+          "NEWTYPE": {
+            "TYPENAME": "DataSm"
+          }
+        }
+      },
+      "15": {
+        "DataSmResp": {
+          "NEWTYPE": {
+            "TYPENAME": "DataSmResp"
+          }
+        }
+      },
+      "16": {
+        "CancelSm": {
+          "NEWTYPE": {
+            "TYPENAME": "CancelSm"
+          }
+        }
+      },
+      "17": {
+        "ReplaceSm": {
+          "NEWTYPE": {
+            "TYPENAME": "ReplaceSm"
+          }
+        }
+      },
+      "18": {
+        "SubmitMulti": {
+          "NEWTYPE": {
+            "TYPENAME": "SubmitMulti"
+          }
+        }
+      },
+      "19": {
+        "SubmitMultiResp": {
+          "NEWTYPE": {
+            "TYPENAME": "SubmitMultiResp"
+          }
+        }
+      },
+      "20": {
+        "BroadcastSm": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastSm"
+          }
+        }
+      },
+      "21": {
+        "BroadcastSmResp": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastSmResp"
+          }
+        }
+      },
+      "22": {
+        "QueryBroadcastSm": {
+          "NEWTYPE": {
+            "TYPENAME": "QueryBroadcastSm"
+          }
+        }
+      },
+      "23": {
+        "QueryBroadcastSmResp": {
+          "NEWTYPE": {
+            "TYPENAME": "QueryBroadcastSmResp"
+          }
+        }
+      },
+      "24": {
+        "CancelBroadcastSm": {
+          "NEWTYPE": {
+            "TYPENAME": "CancelBroadcastSm"
+          }
+        }
+      },
+      "25": {
+        "Unbind": "UNIT"
+      },
+      "26": {
+        "UnbindResp": "UNIT"
+      },
+      "27": {
+        "EnquireLink": "UNIT"
+      },
+      "28": {
+        "EnquireLinkResp": "UNIT"
+      },
+      "29": {
+        "GenericNack": "UNIT"
+      },
+      "30": {
+        "CancelSmResp": "UNIT"
+      },
+      "31": {
+        "ReplaceSmResp": "UNIT"
+      },
+      "32": {
+        "CancelBroadcastSmResp": "UNIT"
+      },
+      "33": {
+        "Other": {
+          "STRUCT": [
+            {
+              "command_id": {
+                "TYPENAME": "CommandId"
+              }
+            },
+            {
+              "body": {
+                "SEQ": "U8"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Presentation": {
+    "ENUM": {
+      "0": {
+        "PresentationAllowed": "UNIT"
+      },
+      "1": {
+        "PresentationRestricted": "UNIT"
+      },
+      "2": {
+        "NumberNotAvailable": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "PriorityFlag": {
+    "STRUCT": [
+      {
+        "value": "U8"
+      }
+    ]
+  },
+  "PrivacyIndicator": {
+    "ENUM": {
+      "0": {
+        "NotRestricted": "UNIT"
+      },
+      "1": {
+        "Restricted": "UNIT"
+      },
+      "2": {
+        "Confidential": "UNIT"
+      },
+      "3": {
+        "Secret": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "QueryBroadcastSm": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "user_message_reference": {
+          "OPTION": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "QueryBroadcastSmResp": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "QuerySm": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "QuerySmResp": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "final_date": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "message_state": {
+          "TYPENAME": "MessageState"
+        }
+      },
+      {
+        "error_code": "U8"
+      }
+    ]
+  },
+  "RegisteredDelivery": {
+    "STRUCT": [
+      {
+        "mc_delivery_receipt": {
+          "TYPENAME": "MCDeliveryReceipt"
+        }
+      },
+      {
+        "sme_originated_acknowledgement": {
+          "TYPENAME": "SmeOriginatedAcknowledgement"
+        }
+      },
+      {
+        "intermediate_notification": {
+          "TYPENAME": "IntermediateNotification"
+        }
+      },
+      {
+        "other": "U8"
+      }
+    ]
+  },
+  "ReplaceIfPresentFlag": {
+    "ENUM": {
+      "0": {
+        "DoNotReplace": "UNIT"
+      },
+      "1": {
+        "Replace": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "ReplaceSm": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "schedule_delivery_time": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "validity_period": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "registered_delivery": {
+          "TYPENAME": "RegisteredDelivery"
+        }
+      },
+      {
+        "sm_default_msg_id": "U8"
+      },
+      {
+        "sm_length": "U8"
+      },
+      {
+        "short_message": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "message_payload": {
+          "OPTION": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "Screening": {
+    "ENUM": {
+      "0": {
+        "NotScreened": "UNIT"
+      },
+      "1": {
+        "VerifiedAndPassed": "UNIT"
+      },
+      "2": {
+        "VerifiedAndFailed": "UNIT"
+      },
+      "3": {
+        "NetworkProvided": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "ServiceType": {
+    "STRUCT": [
+      {
+        "value": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "SetDpf": {
+    "ENUM": {
+      "0": {
+        "NotRequested": "UNIT"
+      },
+      "1": {
+        "Requested": "UNIT"
+      },
+      "2": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "SmeAddress": {
+    "STRUCT": [
+      {
+        "dest_flag": {
+          "TYPENAME": "DestFlag"
+        }
+      },
+      {
+        "dest_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "dest_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "destination_addr": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "SmeOriginatedAcknowledgement": {
+    "ENUM": {
+      "0": {
+        "NoReceiptSmeAcknowledgementRequested": "UNIT"
+      },
+      "1": {
+        "SmeDeliveryAcknowledgementRequested": "UNIT"
+      },
+      "2": {
+        "SmeUserAcknowledgementRequested": "UNIT"
+      },
+      "3": {
+        "BothDeliveryAndUserAcknowledgmentRequested": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "Subaddress": {
+    "STRUCT": [
+      {
+        "tag": {
+          "TYPENAME": "SubaddressTag"
+        }
+      },
+      {
+        "addr": {
+          "SEQ": "U8"
+        }
+      }
+    ]
+  },
+  "SubaddressTag": {
+    "ENUM": {
+      "0": {
+        "NsapEven": "UNIT"
+      },
+      "1": {
+        "NsapOdd": "UNIT"
+      },
+      "2": {
+        "UserSpecified": "UNIT"
+      },
+      "3": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "SubmitMulti": {
+    "STRUCT": [
+      {
+        "service_type": {
+          "TYPENAME": "ServiceType"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "number_of_dests": "U8"
+      },
+      {
+        "dest_address": {
+          "SEQ": {
+            "TYPENAME": "DestAddress"
+          }
+        }
+      },
+      {
+        "esm_class": {
+          "TYPENAME": "EsmClass"
+        }
+      },
+      {
+        "protocol_id": "U8"
+      },
+      {
+        "priority_flag": {
+          "TYPENAME": "PriorityFlag"
+        }
+      },
+      {
+        "schedule_delivery_time": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "validity_period": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "registered_delivery": {
+          "TYPENAME": "RegisteredDelivery"
+        }
+      },
+      {
+        "replace_if_present_flag": {
+          "TYPENAME": "ReplaceIfPresentFlag"
+        }
+      },
+      {
+        "data_coding": {
+          "TYPENAME": "DataCoding"
+        }
+      },
+      {
+        "sm_default_msg_id": "U8"
+      },
+      {
+        "sm_length": "U8"
+      },
+      {
+        "short_message": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "SubmitMultiResp": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "no_unsuccess": "U8"
+      },
+      {
+        "unsuccess_sme": {
+          "SEQ": {
+            "TYPENAME": "UnsuccessSme"
+          }
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "SubmitSm": {
+    "STRUCT": [
+      {
+        "service_type": {
+          "TYPENAME": "ServiceType"
+        }
+      },
+      {
+        "source_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "source_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "source_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "dest_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "dest_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "destination_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "esm_class": {
+          "TYPENAME": "EsmClass"
+        }
+      },
+      {
+        "protocol_id": "U8"
+      },
+      {
+        "priority_flag": {
+          "TYPENAME": "PriorityFlag"
+        }
+      },
+      {
+        "schedule_delivery_time": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "validity_period": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "registered_delivery": {
+          "TYPENAME": "RegisteredDelivery"
+        }
+      },
+      {
+        "replace_if_present_flag": {
+          "TYPENAME": "ReplaceIfPresentFlag"
+        }
+      },
+      {
+        "data_coding": {
+          "TYPENAME": "DataCoding"
+        }
+      },
+      {
+        "sm_default_msg_id": "U8"
+      },
+      {
+        "sm_length": "U8"
+      },
+      {
+        "short_message": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "SubmitSmResp": {
+    "STRUCT": [
+      {
+        "message_id": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "tlvs": {
+          "SEQ": {
+            "TYPENAME": "Tlv"
+          }
+        }
+      }
+    ]
+  },
+  "Tlv": {
+    "STRUCT": [
+      {
+        "tag": {
+          "TYPENAME": "TlvTag"
+        }
+      },
+      {
+        "value_length": "U16"
+      },
+      {
+        "value": {
+          "OPTION": {
+            "TYPENAME": "TlvValue"
+          }
+        }
+      }
+    ]
+  },
+  "TlvTag": {
+    "ENUM": {
+      "0": {
+        "DestAddrSubunit": "UNIT"
+      },
+      "1": {
+        "DestNetworkType": "UNIT"
+      },
+      "2": {
+        "DestBearerType": "UNIT"
+      },
+      "3": {
+        "DestTelematicsId": "UNIT"
+      },
+      "4": {
+        "SourceAddrSubunit": "UNIT"
+      },
+      "5": {
+        "SourceNetworkType": "UNIT"
+      },
+      "6": {
+        "SourceBearerType": "UNIT"
+      },
+      "7": {
+        "SourceTelematicsId": "UNIT"
+      },
+      "8": {
+        "QosTimeToLive": "UNIT"
+      },
+      "9": {
+        "PayloadType": "UNIT"
+      },
+      "10": {
+        "AdditionalStatusInfoText": "UNIT"
+      },
+      "11": {
+        "ReceiptedMessageId": "UNIT"
+      },
+      "12": {
+        "MsMsgWaitFacilities": "UNIT"
+      },
+      "13": {
+        "PrivacyIndicator": "UNIT"
+      },
+      "14": {
+        "SourceSubaddress": "UNIT"
+      },
+      "15": {
+        "DestSubaddress": "UNIT"
+      },
+      "16": {
+        "UserMessageReference": "UNIT"
+      },
+      "17": {
+        "UserResponseCode": "UNIT"
+      },
+      "18": {
+        "SourcePort": "UNIT"
+      },
+      "19": {
+        "DestPort": "UNIT"
+      },
+      "20": {
+        "SarMsgRefNum": "UNIT"
+      },
+      "21": {
+        "LanguageIndicator": "UNIT"
+      },
+      "22": {
+        "SarTotalSegments": "UNIT"
+      },
+      "23": {
+        "SarSegmentSeqnum": "UNIT"
+      },
+      "24": {
+        "ScInterfaceVersion": "UNIT"
+      },
+      "25": {
+        "CallbackNumPresInd": "UNIT"
+      },
+      "26": {
+        "CallbackNumAtag": "UNIT"
+      },
+      "27": {
+        "NumberOfMessages": "UNIT"
+      },
+      "28": {
+        "CallbackNum": "UNIT"
+      },
+      "29": {
+        "DpfResult": "UNIT"
+      },
+      "30": {
+        "SetDpf": "UNIT"
+      },
+      "31": {
+        "MsAvailabilityStatus": "UNIT"
+      },
+      "32": {
+        "NetworkErrorCode": "UNIT"
+      },
+      "33": {
+        "MessagePayload": "UNIT"
+      },
+      "34": {
+        "DeliveryFailureReason": "UNIT"
+      },
+      "35": {
+        "MoreMessagesToSend": "UNIT"
+      },
+      "36": {
+        "MessageState": "UNIT"
+      },
+      "37": {
+        "CongestionState": "UNIT"
+      },
+      "38": {
+        "UssdServiceOp": "UNIT"
+      },
+      "39": {
+        "BroadcastChannelIndicator": "UNIT"
+      },
+      "40": {
+        "BroadcastContentType": "UNIT"
+      },
+      "41": {
+        "BroadcastContentTypeInfo": "UNIT"
+      },
+      "42": {
+        "BroadcastMessageClass": "UNIT"
+      },
+      "43": {
+        "BroadcastRepNum": "UNIT"
+      },
+      "44": {
+        "BroadcastFrequencyInterval": "UNIT"
+      },
+      "45": {
+        "BroadcastAreaIdentifier": "UNIT"
+      },
+      "46": {
+        "BroadcastErrorStatus": "UNIT"
+      },
+      "47": {
+        "BroadcastAreaSuccess": "UNIT"
+      },
+      "48": {
+        "BroadcastEndTime": "UNIT"
+      },
+      "49": {
+        "BroadcastServiceGroup": "UNIT"
+      },
+      "50": {
+        "BillingIdentification": "UNIT"
+      },
+      "51": {
+        "SourceNetworkId": "UNIT"
+      },
+      "52": {
+        "DestNetworkId": "UNIT"
+      },
+      "53": {
+        "SourceNodeId": "UNIT"
+      },
+      "54": {
+        "DestNodeId": "UNIT"
+      },
+      "55": {
+        "DestAddrNpResolution": "UNIT"
+      },
+      "56": {
+        "DestAddrNpInformation": "UNIT"
+      },
+      "57": {
+        "DestAddrNpCountry": "UNIT"
+      },
+      "58": {
+        "DisplayTime": "UNIT"
+      },
+      "59": {
+        "SmsSignal": "UNIT"
+      },
+      "60": {
+        "MsValidity": "UNIT"
+      },
+      "61": {
+        "AlertOnMessageDelivery": "UNIT"
+      },
+      "62": {
+        "ItsReplyType": "UNIT"
+      },
+      "63": {
+        "ItsSessionInfo": "UNIT"
+      },
+      "64": {
+        "Other": {
+          "NEWTYPE": "U16"
+        }
+      }
+    }
+  },
+  "TlvValue": {
+    "ENUM": {
+      "0": {
+        "AdditionalStatusInfoText": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "1": {
+        "AlertOnMessageDelivery": {
+          "NEWTYPE": {
+            "TYPENAME": "AlertOnMessageDelivery"
+          }
+        }
+      },
+      "2": {
+        "BillingIdentification": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "3": {
+        "BroadcastAreaIdentifier": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastAreaIdentifier"
+          }
+        }
+      },
+      "4": {
+        "BroadcastAreaSuccess": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastAreaSuccess"
+          }
+        }
+      },
+      "5": {
+        "BroadcastContentTypeInfo": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "6": {
+        "BroadcastChannelIndicator": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastChannelIndicator"
+          }
+        }
+      },
+      "7": {
+        "BroadcastContentType": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastContentType"
+          }
+        }
+      },
+      "8": {
+        "BroadcastEndTime": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "9": {
+        "BroadcastErrorStatus": {
+          "NEWTYPE": {
+            "TYPENAME": "CommandStatus"
+          }
+        }
+      },
+      "10": {
+        "BroadcastFrequencyInterval": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastFrequencyInterval"
+          }
+        }
+      },
+      "11": {
+        "BroadcastMessageClass": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastMessageClass"
+          }
+        }
+      },
+      "12": {
+        "BroadcastRepNum": {
+          "NEWTYPE": {
+            "TYPENAME": "BroadcastRepNum"
+          }
+        }
+      },
+      "13": {
+        "BroadcastServiceGroup": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "14": {
+        "CallbackNum": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "15": {
+        "CallbackNumAtag": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "16": {
+        "CallbackNumPresInd": {
+          "NEWTYPE": {
+            "TYPENAME": "CallbackNumPresInd"
+          }
+        }
+      },
+      "17": {
+        "CongestionState": {
+          "NEWTYPE": {
+            "TYPENAME": "CongestionState"
+          }
+        }
+      },
+      "18": {
+        "DeliveryFailureReason": {
+          "NEWTYPE": {
+            "TYPENAME": "DeliveryFailureReason"
+          }
+        }
+      },
+      "19": {
+        "DestAddrNpCountry": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "20": {
+        "DestAddrNpInformation": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "21": {
+        "DestAddrNpResolution": {
+          "NEWTYPE": {
+            "TYPENAME": "DestAddrNpResolution"
+          }
+        }
+      },
+      "22": {
+        "DestAddrSubunit": {
+          "NEWTYPE": {
+            "TYPENAME": "AddrSubunit"
+          }
+        }
+      },
+      "23": {
+        "DestBearerType": {
+          "NEWTYPE": {
+            "TYPENAME": "BearerType"
+          }
+        }
+      },
+      "24": {
+        "DestNetworkId": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "25": {
+        "DestNetworkType": {
+          "NEWTYPE": {
+            "TYPENAME": "NetworkType"
+          }
+        }
+      },
+      "26": {
+        "DestNodeId": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "27": {
+        "DestSubaddress": {
+          "NEWTYPE": {
+            "TYPENAME": "Subaddress"
+          }
+        }
+      },
+      "28": {
+        "DestTelematicsId": {
+          "NEWTYPE": "U16"
+        }
+      },
+      "29": {
+        "DestPort": {
+          "NEWTYPE": "U16"
+        }
+      },
+      "30": {
+        "DisplayTime": {
+          "NEWTYPE": {
+            "TYPENAME": "DisplayTime"
+          }
+        }
+      },
+      "31": {
+        "DpfResult": {
+          "NEWTYPE": {
+            "TYPENAME": "DpfResult"
+          }
+        }
+      },
+      "32": {
+        "ItsReplyType": {
+          "NEWTYPE": {
+            "TYPENAME": "ItsReplyType"
+          }
+        }
+      },
+      "33": {
+        "ItsSessionInfo": {
+          "NEWTYPE": {
+            "TYPENAME": "ItsSessionInfo"
+          }
+        }
+      },
+      "34": {
+        "LanguageIndicator": {
+          "NEWTYPE": {
+            "TYPENAME": "LanguageIndicator"
+          }
+        }
+      },
+      "35": {
+        "MessagePayload": {
+          "NEWTYPE": {
+            "TYPENAME": "MessagePayload"
+          }
+        }
+      },
+      "36": {
+        "MessageState": {
+          "NEWTYPE": {
+            "TYPENAME": "MessageState"
+          }
+        }
+      },
+      "37": {
+        "MoreMessagesToSend": {
+          "NEWTYPE": {
+            "TYPENAME": "MoreMessagesToSend"
+          }
+        }
+      },
+      "38": {
+        "MsAvailabilityStatus": {
+          "NEWTYPE": {
+            "TYPENAME": "MsAvailabilityStatus"
+          }
+        }
+      },
+      "39": {
+        "MsMsgWaitFacilities": {
+          "NEWTYPE": {
+            "TYPENAME": "MsMsgWaitFacilities"
+          }
+        }
+      },
+      "40": {
+        "MsValidity": {
+          "NEWTYPE": {
+            "TYPENAME": "MsValidity"
+          }
+        }
+      },
+      "41": {
+        "NetworkErrorCode": {
+          "NEWTYPE": {
+            "TYPENAME": "NetworkErrorCode"
+          }
+        }
+      },
+      "42": {
+        "NumberOfMessages": {
+          "NEWTYPE": {
+            "TYPENAME": "NumberOfMessages"
+          }
+        }
+      },
+      "43": {
+        "PayloadType": {
+          "NEWTYPE": {
+            "TYPENAME": "PayloadType"
+          }
+        }
+      },
+      "44": {
+        "PrivacyIndicator": {
+          "NEWTYPE": {
+            "TYPENAME": "PrivacyIndicator"
+          }
+        }
+      },
+      "45": {
+        "QosTimeToLive": {
+          "NEWTYPE": "U32"
+        }
+      },
+      "46": {
+        "ReceiptedMessageId": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "47": {
+        "SarMsgRefNum": {
+          "NEWTYPE": "U16"
+        }
+      },
+      "48": {
+        "SarSegmentSeqnum": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "49": {
+        "SarTotalSegments": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "50": {
+        "ScInterfaceVersion": {
+          "NEWTYPE": {
+            "TYPENAME": "InterfaceVersion"
+          }
+        }
+      },
+      "51": {
+        "SetDpf": {
+          "NEWTYPE": {
+            "TYPENAME": "SetDpf"
+          }
+        }
+      },
+      "52": {
+        "SmsSignal": {
+          "NEWTYPE": "U16"
+        }
+      },
+      "53": {
+        "SourceAddrSubunit": {
+          "NEWTYPE": {
+            "TYPENAME": "AddrSubunit"
+          }
+        }
+      },
+      "54": {
+        "SourceBearerType": {
+          "NEWTYPE": {
+            "TYPENAME": "BearerType"
+          }
+        }
+      },
+      "55": {
+        "SourceNetworkId": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "56": {
+        "SourceNetworkType": {
+          "NEWTYPE": {
+            "TYPENAME": "NetworkType"
+          }
+        }
+      },
+      "57": {
+        "SourceNodeId": {
+          "NEWTYPE": {
+            "SEQ": "U8"
+          }
+        }
+      },
+      "58": {
+        "SourcePort": {
+          "NEWTYPE": "U16"
+        }
+      },
+      "59": {
+        "SourceSubaddress": {
+          "NEWTYPE": {
+            "TYPENAME": "Subaddress"
+          }
+        }
+      },
+      "60": {
+        "SourceTelematicsId": {
+          "NEWTYPE": "U16"
+        }
+      },
+      "61": {
+        "UserMessageReference": {
+          "NEWTYPE": {
+            "TYPENAME": "UserMessageReference"
+          }
+        }
+      },
+      "62": {
+        "UserResponseCode": {
+          "NEWTYPE": "U8"
+        }
+      },
+      "63": {
+        "UssdServiceOp": {
+          "NEWTYPE": {
+            "TYPENAME": "UssdServiceOp"
+          }
+        }
+      },
+      "64": {
+        "Other": {
+          "STRUCT": [
+            {
+              "tag": {
+                "TYPENAME": "TlvTag"
+              }
+            },
+            {
+              "value": {
+                "SEQ": "U8"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Ton": {
+    "ENUM": {
+      "0": {
+        "Unknown": "UNIT"
+      },
+      "1": {
+        "International": "UNIT"
+      },
+      "2": {
+        "National": "UNIT"
+      },
+      "3": {
+        "NetworkSpecific": "UNIT"
+      },
+      "4": {
+        "SubscriberNumber": "UNIT"
+      },
+      "5": {
+        "Alphanumeric": "UNIT"
+      },
+      "6": {
+        "Abbreviated": "UNIT"
+      },
+      "7": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "TypeOfMessage": {
+    "ENUM": {
+      "0": {
+        "VoicemailMessageWaiting": "UNIT"
+      },
+      "1": {
+        "FaxMessageWaiting": "UNIT"
+      },
+      "2": {
+        "ElectronicMailMessageWaiting": "UNIT"
+      },
+      "3": {
+        "OtherMessageWaiting": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "TypeOfNetwork": {
+    "ENUM": {
+      "0": {
+        "Generic": "UNIT"
+      },
+      "1": {
+        "Gsm": "UNIT"
+      },
+      "2": {
+        "Tdma": "UNIT"
+      },
+      "3": {
+        "Cdma": "UNIT"
+      },
+      "4": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "UnitOfTime": {
+    "ENUM": {
+      "0": {
+        "AsFrequentlyAsPossible": "UNIT"
+      },
+      "1": {
+        "Seconds": "UNIT"
+      },
+      "2": {
+        "Minutes": "UNIT"
+      },
+      "3": {
+        "Hours": "UNIT"
+      },
+      "4": {
+        "Days": "UNIT"
+      },
+      "5": {
+        "Weeks": "UNIT"
+      },
+      "6": {
+        "Months": "UNIT"
+      },
+      "7": {
+        "Years": "UNIT"
+      },
+      "8": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "UnitsOfTime": {
+    "ENUM": {
+      "0": {
+        "Seconds": "UNIT"
+      },
+      "1": {
+        "Minutes": "UNIT"
+      },
+      "2": {
+        "Hours": "UNIT"
+      },
+      "3": {
+        "Days": "UNIT"
+      },
+      "4": {
+        "Weeks": "UNIT"
+      },
+      "5": {
+        "Months": "UNIT"
+      },
+      "6": {
+        "Years": "UNIT"
+      },
+      "7": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  },
+  "UnsuccessSme": {
+    "STRUCT": [
+      {
+        "dest_addr_ton": {
+          "TYPENAME": "Ton"
+        }
+      },
+      {
+        "dest_addr_npi": {
+          "TYPENAME": "Npi"
+        }
+      },
+      {
+        "destination_addr": {
+          "SEQ": "U8"
+        }
+      },
+      {
+        "error_status_code": {
+          "TYPENAME": "CommandStatus"
+        }
+      }
+    ]
+  },
+  "UserMessageReference": {
+    "STRUCT": [
+      {
+        "value": "U16"
+      }
+    ]
+  },
+  "UssdServiceOp": {
+    "ENUM": {
+      "0": {
+        "PssdIndication": "UNIT"
+      },
+      "1": {
+        "PssrIndication": "UNIT"
+      },
+      "2": {
+        "UssrRequest": "UNIT"
+      },
+      "3": {
+        "UssnRequest": "UNIT"
+      },
+      "4": {
+        "PssdResponse": "UNIT"
+      },
+      "5": {
+        "PssrResponse": "UNIT"
+      },
+      "6": {
+        "UssrConfirm": "UNIT"
+      },
+      "7": {
+        "UssnConfirm": "UNIT"
+      },
+      "8": {
+        "Other": {
+          "NEWTYPE": "U8"
+        }
+      }
+    }
+  }
+}
